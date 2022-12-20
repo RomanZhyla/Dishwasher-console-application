@@ -25,6 +25,7 @@
 Washing process started!
 
 Selected program: <?= $name ?? '' ?>
+
 Estimated water use: <?= $waterAmount ?? '' ?> ml
 Water temparture: <?= $waterTemperature ?? '' ?> °C
 Estimated wash time: <?= $washTime ?? '' ?> minutes

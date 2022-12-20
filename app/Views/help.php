@@ -22,7 +22,7 @@ The system supports three modes:
 №2 Pan & Pots (water amount: 800 ml | temp: 65°C | time: 100 min | With drying)
 №3 Dry cycle (Drying only)
 
-To start the mode, please use --mode=[mode_number]
+To start the mode, please use mode=[mode_number]
 
 For example, for Regular wash, execute the command
 php app/control.php --mode=1
