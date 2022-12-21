@@ -24,15 +24,15 @@
 
 Washing process started!
 
-Selected program: <?= $name ?? '' ?>
+Selected program: <?= $name ?? 'N/A' ?>
 
-Estimated water use: <?= $waterAmount ?? '' ?> ml
-Water temparture: <?= $waterTemperature ?? '' ?> °C
-Estimated wash time: <?= $washTime ?? '' ?> minutes
-Included drying: <?= $dryingMode ?? '' ?>
+Estimated water use: <?= $waterAmount ?? 'N/A' ?> ml
+Water temparture: <?= $waterTemperature ?? 'N/A' ?> °C
+Estimated wash time: <?= $washTime ?? 'N/A' ?> minutes
+Included drying: <?= $dryingMode ?? 'N/A' ?>
 
 
-Estimated finish time: <?= $finishTime ?? '' ?>
+Estimated finish time: <?= $finishTime ?? 'N/A' ?>
 
 
 Enjoy!

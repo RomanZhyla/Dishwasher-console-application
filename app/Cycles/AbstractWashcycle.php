@@ -51,9 +51,12 @@ abstract class AbstractWashcycle implements Washcycle
         $waterTemperature = $this->getWaterTemperature();
         $washTime = $this->getWashTime();
         $dryingMode = $this->isDryingModeIncluded();
+        $finishTime = null;
 
-        $date = new DateTimeImmutable();
-        $finishTime = $date->add(new DateInterval("PT{$washTime}M"))->format('l jS \o\f F Y h:i:s A');
+        if($washTime) {
+            $date = new DateTimeImmutable();
+            $finishTime = $date->add(new DateInterval("PT{$washTime}M"))->format('l jS \o\f F Y h:i:s A');
+        }
 
         include APP_DIR.'/Views/startWashingMessage.php';
     }
